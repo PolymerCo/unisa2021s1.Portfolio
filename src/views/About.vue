@@ -1,5 +1,15 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  I'm at the About page!
 </template>
+
+<script>
+
+export default {
+  name: 'About',
+  components: { }
+}
+</script>
+
+<style lang="sass" scoped>
+
+</style>

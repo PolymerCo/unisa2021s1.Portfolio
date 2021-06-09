@@ -1,11 +1,11 @@
 <template>
-  I'm home!
+  this is the footer
 </template>
 
 <script>
 
 export default {
-  name: 'Home',
+  name: 'GalleryFooter',
   components: { }
 }
 </script>

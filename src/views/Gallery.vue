@@ -1,11 +1,11 @@
 <template>
-  I'm home!
+  I'm at the gallery with {{ $route.params.id }}!
 </template>
 
 <script>
 
 export default {
-  name: 'Home',
+  name: 'Gallery',
   components: { }
 }
 </script>

@@ -1,30 +1,51 @@
 <template>
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+  </div> -->
+  <div class='all-content'>
+    <section class='main-section sidebar'>
+      <gallery-navigation/>
+      <gallery-footer/>
+    </section>
+    <section class='main-section content'>
+      <router-view/>
+    </section>
   </div>
-  <router-view/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+
+import GalleryNavigation from '@/components/GalleryNavigation.vue'
+import GalleryFooter from '@/components/GalleryFooter.vue'
+
+export default {
+  name: 'App',
+  components: { GalleryNavigation, GalleryFooter }
 }
 
-#nav {
-  padding: 30px;
+</script>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+<style lang="sass">
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@import 'assets/style/reset.css'
+@import 'assets/style/fonts.css'
+@import 'assets/style/theme'
+
+*
+  font-family: 'Noto Sans JP', sans-serif
+
+div.all-content
+  display: flex
+  flex-wrap: wrap
+
+  section.main-section
+
+    &.sidebar
+      width: 360px
+      max-width: 100vw
+
+    &.content
+      flex: 1
+
 </style>
