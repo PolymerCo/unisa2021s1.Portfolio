@@ -6,6 +6,7 @@
   <div class='all-content'>
     <section class='main-section sidebar'>
       <gallery-navigation/>
+      <div class='flex-spacer'></div>
       <gallery-footer/>
     </section>
     <section class='main-section content'>
@@ -35,6 +36,13 @@ export default {
 *
   font-family: 'Noto Sans JP', sans-serif
 
+a
+  color: $body-font-color-alt
+  text-decoration: none
+
+div.flex-spacer
+  flex: 1
+
 div.all-content
   display: flex
   flex-wrap: wrap
@@ -42,8 +50,11 @@ div.all-content
   section.main-section
 
     &.sidebar
+      height: 100vh
       width: 360px
       max-width: 100vw
+      display: flex
+      flex-direction: column
 
     &.content
       flex: 1
