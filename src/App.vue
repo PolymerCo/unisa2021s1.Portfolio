@@ -1,8 +1,4 @@
 <template>
-  <!-- <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div> -->
   <div class='all-content'>
     <section class='main-section sidebar'>
       <gallery-navigation/>
@@ -40,6 +36,12 @@ a
   color: $body-font-color-alt
   text-decoration: none
 
+hr
+  width: 30%
+  border: none
+  border-top: 1px dashed #acacac
+  margin: 30px 0
+
 div.flex-spacer
   flex: 1
 
@@ -48,9 +50,11 @@ div.all-content
   flex-wrap: wrap
 
   section.main-section
+    display: flex
+    flex-direction: column
+    padding: 38px
 
     &.sidebar
-      height: 100vh
       width: 360px
       max-width: 100vw
       display: flex
@@ -58,5 +62,6 @@ div.all-content
 
     &.content
       flex: 1
+      padding: 84px
 
 </style>

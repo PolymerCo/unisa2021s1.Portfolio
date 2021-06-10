@@ -2,17 +2,17 @@
   <div class='gallery-navigation-root'>
     <div class='header'>
       Oliver Mitchell
-      <span class='sub-header'>@PolymerDesign</span>
+      <span class='sub-header'>3D Artist and Developer</span>
     </div>
     <nav class='nav'>
-      <router-link class='nav-link' to='/' icon='🖼️'>Gallery</router-link>
-      <router-link class='nav-link' to='/about' icon='🧠'>About</router-link>
-      <router-link class='nav-link' to='/contact' icon='📧'>Contact</router-link>
-      <br>
-      <router-link class='nav-link' to='/gallery/ppsh_41'>PPSh-41</router-link>
-      <router-link class='nav-link' to='/gallery/blue_yeti'>Blue Yeti</router-link>
-      <router-link class='nav-link' to='/gallery/sub_console'>Sub Console</router-link>
-      <router-link class='nav-link' to='/gallery/missile'>Missile</router-link>
+      <router-link class='nav-link' to='/' icon='🖼️' display-text='Gallery'><p>Gallery</p></router-link>
+      <router-link class='nav-link' to='/about' icon='🧠' display-text='About'><p>About</p></router-link>
+      <router-link class='nav-link' to='/contact' icon='📧' display-text='Contact'><p>Contact</p></router-link>
+      <hr>
+      <router-link class='nav-link project' to='/gallery/ppsh_41' icon='#' display-text='PPSh41'><p>PPSh41</p></router-link>
+      <router-link class='nav-link project' to='/gallery/blue_yeti' icon='#' display-text='BlueYeti'><p>BlueYeti</p></router-link>
+      <router-link class='nav-link project' to='/gallery/sub_console' icon='#' display-text='SubmarineConsole'><p>SubmarineConsole</p></router-link>
+      <router-link class='nav-link project' to='/gallery/missile' icon='#' display-text='MissileLauncher'><p>MissileLauncher</p></router-link>
     </nav>
   </div>
 </template>
@@ -35,6 +35,7 @@ export default {
 
   div.gallery-navigation-root
     padding: 35px 68px
+    height: 100%
 
     div.header
       font-family: 'Comfortaa', sans-serif
@@ -48,7 +49,15 @@ export default {
         font-family: 'JetBrains Mono', monospace
 
     nav.nav
-      padding: 38px 0
+      position: sticky
+      top: 0px
+      padding: 62px 0 18px
+      opacity: 0.75
+
+      transition: 400ms opacity
+
+      &:hover
+        opacity: 1
 
       a.nav-link
         display: block
@@ -59,16 +68,21 @@ export default {
         width: fit-content
         padding: 0 6px 0 32px
         margin: 0 0 14px -6px
-        color: $body-font-color
+
+        p
+          color: $body-font-color
 
         &::before
           content: attr(icon)
           position: absolute
           left: 4px
           bottom: 2px
+          overflow: hidden
+          z-index: 20
+          font-weight: bold
 
-        &:not([aria-current='page'])::after
-          content: ''
+        &:not([aria-current='page']) p::after
+          content: ' '
           width: 0
           height: 1.5px
           left: 32px
@@ -78,19 +92,50 @@ export default {
 
           transition: 200ms width ease-in-out
 
-        &:not([aria-current='page']):hover::after
+        &:not([aria-current='page']):hover p::after
           width: calc(100% - 38px)
 
-        &[aria-current='page']
+        &[aria-current='page']::after
+          content: attr(display-text)
+          position: absolute
+          top: -2px
+          left: 0
+          width: 0%
+          height: calc(100% + 4px)
           background-color: $body-font-color
           color: $background-color
-          box-shadow: 0 0 0 3px $body-font-color
+          padding-left: 32px
+          padding-top: 2px
+          z-index: 10
+          overflow: hidden
+
+          animation: 400ms ease-in-out forwards nav-link-selected-entry
 
         &:not([icon])
           padding: 0 6px
 
-        &:not([icon]):not([aria-current='page'])::after
+        &:not([icon]):not([aria-current='page']) p::after
           left: 6px
-        &:not([icon]):not([aria-current='page']):hover::after
+
+        &:not([icon]):not([aria-current='page']):hover p::after
           width: calc(100% - 12px)
+
+        &.project
+          transform: translateX(-1px)
+
+        &.project::before
+          left: 12px
+          bottom: 0
+
+  @keyframes nav-link-selected-entry
+    0%
+      width: 32px
+      opacity: 0
+    50%
+      opacity: 1
+    60%
+      width: 32px
+    100%
+      width: 100%
+
 </style>
