@@ -55,10 +55,11 @@ div.all-content
     padding: 38px
 
     &.sidebar
-      width: 360px
+      width: 380px
       max-width: 100vw
       display: flex
       flex-direction: column
+      border-right: 1px dashed #c8c8c8
 
     &.content
       flex: 1

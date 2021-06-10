@@ -24,25 +24,23 @@
         A game-ready Soviet WW2 sub-machine gun with both high-poly and low-poly representations; with full PBR material support.
       </p>
     </div>
-    <router-link class='see-more-link' to='/gallery/ppsh_41' text='See more&nbsp;&nbsp;〉'></router-link>
+    <router-link class='see-more-link' to='/gallery/ppsh_41'><p>See more</p></router-link>
   </article>
   <hr/>
   <article class='showcase-container'>
     <router-link to='/gallery/blue_yeti'>
       <div class='showcase-entry'>
         <div class='showcase-sub-photo-container'>
-          <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Unreal_Magazine_1.png' @load='setImageLoaded($event)'/>
-          <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Low_Poly_Full_Wireframe.png' @load='setImageLoaded($event)'>
-          <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Low_Poly_Magazine_Wireframe.png' @load='setImageLoaded($event)'>
+          <img class='image-loader' src='/image/projects/blueyeti/BlueYeti_Blender_White.png' @load='setImageLoaded($event)'/>
+          <img class='image-loader' src='/image/projects/blueyeti/BlueYeti_Blender_Wireframe.png' @load='setImageLoaded($event)'>
 
-          <div class='showcase-photo sub-photo' v-bind:is-loaded='isImageLoaded("/image/projects/ppsh41/Ppsh41_Unreal_Magazine_1.png")' style='background-image: url("/image/projects/ppsh41/Ppsh41_Unreal_Magazine_1.png")'></div>
-          <div class='showcase-photo sub-photo' v-bind:is-loaded='isImageLoaded("/image/projects/ppsh41/Ppsh41_Low_Poly_Full_Wireframe.png")' style='background-image: url("/image/projects/ppsh41/Ppsh41_Low_Poly_Full_Wireframe.png")'></div>
-          <div class='showcase-photo sub-photo' v-bind:is-loaded='isImageLoaded("/image/projects/ppsh41/Ppsh41_Low_Poly_Magazine_Wireframe.png")' style='background-image: url("/image/projects/ppsh41/Ppsh41_Low_Poly_Magazine_Wireframe.png")'></div>
+          <div class='showcase-photo sub-photo' v-bind:is-loaded='isImageLoaded("/image/projects/blueyeti/BlueYeti_Blender_White.png")' style='background-image: url("/image/projects/blueyeti/BlueYeti_Blender_White.png")'></div>
+          <div class='showcase-photo sub-photo' v-bind:is-loaded='isImageLoaded("/image/projects/blueyeti/BlueYeti_Blender_Wireframe.png")' style='background-image: url("/image/projects/blueyeti/BlueYeti_Blender_Wireframe.png")'></div>
         </div>
         <div class='showcase-photo-container'>
-          <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png' @load='setImageLoaded($event)'>
+          <img class='image-loader' src='/image/projects/blueyeti/BlueYeti_Blender_Reference.png' @load='setImageLoaded($event)'>
 
-          <div class='showcase-photo' v-bind:is-loaded='isImageLoaded("/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png")' style='background-image: url("/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png")'></div>
+          <div class='showcase-photo' v-bind:is-loaded='isImageLoaded("/image/projects/blueyeti/BlueYeti_Blender_Reference.png")' style='background-image: url("/image/projects/blueyeti/BlueYeti_Blender_Reference.png")'></div>
         </div>
       </div>
     </router-link>
@@ -52,7 +50,7 @@
         The iconic Blue Yeti studio microphone re-imagined as a low polygon model.
       </p>
     </div>
-    <router-link class='see-more-link' to='/gallery/blue_yeti' text='See more&nbsp;&nbsp;〉'></router-link>
+    <router-link class='see-more-link' to='/gallery/blue_yeti'><p>See more</p></router-link>
   </article>
   <hr/>
   <article class='showcase-container'>
@@ -71,7 +69,7 @@
         Designed for a real time strategy warship game, this asset was only designed in low-poly to suit the game's graphic style.
       </p>
     </div>
-    <router-link class='see-more-link' to='/gallery/sub_console' text='See more&nbsp;&nbsp;〉'></router-link>
+    <router-link class='see-more-link' to='/gallery/sub_console'><p>See more</p></router-link>
   </article>
   <hr/>
   <article class='showcase-container'>
@@ -93,7 +91,7 @@
         A game-ready Soviet WW2 sub-machine gun with both high-poly and low-poly representations; with full PBR material support.
       </p>
     </div>
-    <router-link class='see-more-link' to='/gallery/missile' text='See more&nbsp;&nbsp;〉'></router-link>
+    <router-link class='see-more-link' to='/gallery/missile'><p>See more</p></router-link>
   </article>
   <hr/>
 </template>
@@ -112,14 +110,10 @@ export default {
   },
   methods: {
     setImageLoaded (e) {
-      this.loadedImages.push(e.path[0].getAttribute('src'))
+      this.loadedImages.push(e.target.getAttribute('src'))
     },
     isImageLoaded (url) {
       return this.loadedImages.includes(url)
-    },
-    gotoGallery (gallery) {
-      this.console.log('hi')
-      // router.push('/gallery/' + gallery)
     }
   }
 }
@@ -138,10 +132,28 @@ export default {
     border: 6px solid white
 
     a.see-more-link
-      color: green
+      color: var(--body-font-color-alt)
+      display: block
+      margin: 28px 0 0
+      text-align: center
+
+      p
+        position: relative
+        display: inline
+        margin: 0 auto
+
+        &::before
+          position: absolute
+          content: '〉'
+          right: -24px
+          top: -3px
+          transition: 100ms right linear
+
+        &:hover::before
+          right: -28px
 
     div.showcase-entry
-      height: 30vw
+      height: 20vw
       min-height: 300px
       width: 100%
       display: flex
