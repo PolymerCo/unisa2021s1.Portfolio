@@ -1,5 +1,7 @@
 # polymerdesign.com.au
 
+Created for the UniSA course "Game Asset Design"
+
 ## Project setup
 ```
 npm install
