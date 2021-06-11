@@ -29,9 +29,6 @@ export default {
 @import 'assets/style/fonts.css'
 @import 'assets/style/theme'
 
-*
-  font-family: 'Noto Sans JP', sans-serif
-
 a
   color: $body-font-color-alt
   text-decoration: none
@@ -48,6 +45,7 @@ div.flex-spacer
 div.all-content
   display: flex
   flex-wrap: wrap
+  min-height: 100vh
 
   section.main-section
     display: flex
@@ -55,7 +53,7 @@ div.all-content
     padding: 38px
 
     &.sidebar
-      width: 380px
+      width: 410px
       max-width: 100vw
       display: flex
       flex-direction: column

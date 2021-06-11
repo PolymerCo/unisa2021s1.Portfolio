@@ -66,7 +66,7 @@
     <div class='showcase-description'>
       <p class='showcase-title'>Submarine Console</p>
       <p class='showcase-article'>
-        Designed for a real time strategy warship game, this asset was only designed in low-poly to suit the game's graphic style.
+        Designed for a real time strategy warship game. This asset was designed with a geometric style to suit the game's aesthetic.
       </p>
     </div>
     <router-link class='see-more-link' to='/gallery/sub_console'><p>See more</p></router-link>
@@ -86,9 +86,9 @@
       </div>
     </router-link>
     <div class='showcase-description'>
-      <p class='showcase-title'>WW2 Soviet PPSh-41</p>
+      <p class='showcase-title'>Missile and Launcher</p>
       <p class='showcase-article'>
-        A game-ready Soviet WW2 sub-machine gun with both high-poly and low-poly representations; with full PBR material support.
+        Again designed with a geometric style, this asset has plenty of small details that add richness to the look and feel.
       </p>
     </div>
     <router-link class='see-more-link' to='/gallery/missile'><p>See more</p></router-link>
@@ -144,9 +144,9 @@ export default {
 
         &::before
           position: absolute
-          content: '〉'
+          content: '\3009'
           right: -24px
-          top: -3px
+          top: 1px
           transition: 100ms right linear
 
         &:hover::before
@@ -161,21 +161,27 @@ export default {
       div.showcase-photo
         background-size: cover
         background-position: center
+        background-repeat: no-repeat
         cursor: pointer
 
-        transition: 200ms box-shadow ease-in-out, 200ms opacity ease-in-out, 200ms border-radius ease-in-out
+        transition: 200ms box-shadow ease-in-out, 200ms border-radius ease-in-out, 200ms filter ease-in-out
 
         &[is-loaded='false']
-          opacity: 0
+          opacity: 1
           box-shadow: inset 0 0 0 10px white
+          cursor: default
+          background-image: url('/image/ui/loader.gif') !important
+          background-size: 50px
 
         &[is-loaded='true']
           opacity: 1
           box-shadow: inset 0 0 0 4px white
+          animation: 200ms ease-in-out forwards "showcase-photo-entry"
+          filter: opacity(1)
 
-        &:hover
+        &[is-loaded='true']:hover
           box-shadow: inset 0 0 0 10px white
-          opacity: 0.8
+          filter: opacity(0.8)
 
       div.showcase-photo-container
         flex: 1
@@ -212,4 +218,10 @@ export default {
         padding: 0 80px
         font-size: 1.2em
         line-height: 1.8em
+
+  @keyframes showcase-photo-entry
+    from
+      opacity: 0
+    to
+      opacity: 1
 </style>

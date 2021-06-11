@@ -2,6 +2,7 @@
 node_modules
 /dist
 
+unisa2021.Models/
 
 # local env files
 .env.local

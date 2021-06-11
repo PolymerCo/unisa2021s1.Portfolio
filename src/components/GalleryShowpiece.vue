@@ -1,21 +1,32 @@
 <template>
   <div class='showpiece-item'>
-    {{ project }}
+    <div v-if="project == 'ppsh_41'">
+      <ppsh-gallery/>
+    </div>
+    <div v-else-if="project == 'blue_yeti'">
+      <blueyeti-gallery/>
+    </div>
+    <div v-else>
+      <router-link to='/'>Go home</router-link>
+    </div>
   </div>
 </template>
 
 <script>
+import BlueyetiGallery from './projects/BlueyetiGallery.vue'
+import PpshGallery from './projects/PpshGallery.vue'
 
 export default {
-  props: ['project', 'description'],
+  props: ['project'],
   name: 'GalleryShowpiece',
-  components: { }
+  components: { PpshGallery, BlueyetiGallery }
 }
 </script>
 
 <style lang="sass" scoped>
   div.showpiece-item
-    width: 140px
-    height: 140px
-    background-color: cornflower
+    width: 100%
+    height: 100%
+    max-width: 1000px
+    margin: 0 auto
 </style>

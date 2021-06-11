@@ -6,7 +6,7 @@ import Gallery from '@/views/Gallery.vue'
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/about', name: 'About', component: About },
-  { path: '/gallery/:id', name: 'Gallery', component: Gallery },
+  { path: '/gallery/:id/:image?', name: 'Gallery', component: Gallery },
   { path: '/:pathMatch(.*)', redirect: '/' }
 ]
 
