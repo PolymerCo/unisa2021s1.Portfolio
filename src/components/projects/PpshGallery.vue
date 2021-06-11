@@ -3,7 +3,7 @@
     <div class='showcase-set'>
       <div class='showcase-item' :is-loaded="isLoaded(item.id)" :item-name='item.id' v-for='item in top_gallery' :key='item.id'>
         <img class="showcase-preloader" @load="setLoaded(item.id)" :src="'/image/projects/ppsh41/' + item.id + '.png'">
-        <router-link :to='"/gallery/ppsh_41/" + item.id'><div class='showcase-image' :item-desc="item.desc" :is-loaded="isLoaded(item.id)" :style="{ backgroundImage: 'url(&quot;/image/projects/ppsh41/' + item.id + '.png&quot;)' }"></div></router-link>
+        <router-link :to='"/gallery/ppsh41/" + item.id'><div class='showcase-image' :item-desc="item.desc" :is-loaded="isLoaded(item.id)" :style="{ backgroundImage: 'url(&quot;/image/projects/ppsh41/' + item.id + '.png&quot;)' }"></div></router-link>
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <article class='showcase-container'>
-    <router-link to='/gallery/ppsh_41'>
+    <router-link to='/gallery/ppsh41'>
       <div class='showcase-entry'>
         <div class='showcase-photo-container'>
           <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png' @load='setImageLoaded($event)'>
@@ -8,7 +8,7 @@
           <div class='showcase-photo' v-bind:is-loaded='isImageLoaded("/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png")' style='background-image: url("/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png")'></div>
         </div>
         <div class='showcase-sub-photo-container'>
-          <img class='image-loader' @click='gotoGallery("ppsh_41")' src='/image/projects/ppsh41/Ppsh41_Unreal_Magazine_1.png' @load='setImageLoaded($event)'/>
+          <img class='image-loader' @click='gotoGallery("ppsh41")' src='/image/projects/ppsh41/Ppsh41_Unreal_Magazine_1.png' @load='setImageLoaded($event)'/>
           <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Low_Poly_Full_Wireframe.png' @load='setImageLoaded($event)'>
           <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Low_Poly_Magazine_Wireframe.png' @load='setImageLoaded($event)'>
 
@@ -24,11 +24,11 @@
         A game-ready Soviet WW2 sub-machine gun with both high-poly and low-poly representations; with full PBR material support.
       </p>
     </div>
-    <router-link class='see-more-link' to='/gallery/ppsh_41'><p>See more</p></router-link>
+    <router-link class='see-more-link' to='/gallery/ppsh41'><p>See more</p></router-link>
   </article>
   <hr/>
   <article class='showcase-container'>
-    <router-link to='/gallery/blue_yeti'>
+    <router-link to='/gallery/blueyeti'>
       <div class='showcase-entry'>
         <div class='showcase-sub-photo-container'>
           <img class='image-loader' src='/image/projects/blueyeti/BlueYeti_Blender_White.png' @load='setImageLoaded($event)'/>
@@ -50,11 +50,11 @@
         The iconic Blue Yeti studio microphone re-imagined as a low polygon model.
       </p>
     </div>
-    <router-link class='see-more-link' to='/gallery/blue_yeti'><p>See more</p></router-link>
+    <router-link class='see-more-link' to='/gallery/blueyeti'><p>See more</p></router-link>
   </article>
   <hr/>
   <article class='showcase-container'>
-    <router-link to='/gallery/sub_console'>
+    <router-link to='/gallery/subconsole'>
       <div class='showcase-entry'>
         <div class='showcase-photo-container'>
           <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png' @load='setImageLoaded($event)'>
@@ -69,11 +69,11 @@
         Designed for a real time strategy warship game. This asset was designed with a geometric style to suit the game's aesthetic.
       </p>
     </div>
-    <router-link class='see-more-link' to='/gallery/sub_console'><p>See more</p></router-link>
+    <router-link class='see-more-link' to='/gallery/subconsole'><p>See more</p></router-link>
   </article>
   <hr/>
   <article class='showcase-container'>
-    <router-link to='/gallery/ppsh_41'>
+    <router-link to='/gallery/ppsh41'>
       <div class='showcase-entry'>
         <div class='showcase-sub-photo-container'>
           <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Low_Poly_Magazine_Wireframe.png' @load='setImageLoaded($event)'>

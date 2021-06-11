@@ -9,9 +9,9 @@
       <router-link class='nav-link' to='/about' icon='🧠' display-text='About'><p>About</p></router-link>
       <router-link class='nav-link' to='/contact' icon='📧' display-text='Contact'><p>Contact</p></router-link>
       <hr>
-      <router-link class='nav-link project' to='/gallery/ppsh_41' icon='#' display-text='PPSh41'><p>PPSh41</p></router-link>
-      <router-link class='nav-link project' to='/gallery/blue_yeti' icon='#' display-text='BlueYeti'><p>BlueYeti</p></router-link>
-      <router-link class='nav-link project' to='/gallery/sub_console' icon='#' display-text='SubmarineConsole'><p>SubmarineConsole</p></router-link>
+      <router-link class='nav-link project' to='/gallery/ppsh41' icon='#' display-text='PPSh41'><p>PPSh41</p></router-link>
+      <router-link class='nav-link project' to='/gallery/blueyeti' icon='#' display-text='BlueYeti'><p>BlueYeti</p></router-link>
+      <router-link class='nav-link project' to='/gallery/subconsole' icon='#' display-text='SubmarineConsole'><p>SubmarineConsole</p></router-link>
       <router-link class='nav-link project' to='/gallery/missile' icon='#' display-text='MissileLauncher'><p>MissileLauncher</p></router-link>
     </nav>
   </div>

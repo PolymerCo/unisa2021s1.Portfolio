@@ -1,6 +1,6 @@
 <template>
   <div class='all-content'>
-    <section class='main-section sidebar'>
+    <section id='t' class='main-section sidebar'>
       <gallery-navigation/>
       <div class='flex-spacer'></div>
       <gallery-footer/>
@@ -18,7 +18,12 @@ import GalleryFooter from '@/components/GalleryFooter.vue'
 
 export default {
   name: 'App',
-  components: { GalleryNavigation, GalleryFooter }
+  components: { GalleryNavigation, GalleryFooter },
+  watch: {
+    $route () {
+      document.getElementById('t').scrollIntoView()
+    }
+  }
 }
 
 </script>
@@ -28,6 +33,9 @@ export default {
 @import 'assets/style/reset.css'
 @import 'assets/style/fonts.css'
 @import 'assets/style/theme'
+
+html
+  scroll-behavior: smooth
 
 a
   color: $body-font-color-alt

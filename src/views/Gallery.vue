@@ -1,13 +1,15 @@
 <template>
   <gallery-showpiece :project="$route.params.id"/>
+  <gallery-image v-if="$route.params.image != ''" :project="$route.params.id" :image="$route.params.image"/>
 </template>
 
 <script>
-import GalleryShowpiece from '../components/GalleryShowpiece.vue'
+import GalleryShowpiece from '@/components/GalleryShowpiece.vue'
+import GalleryImage from '@/components/GalleryImage.vue'
 
 export default {
   name: 'Gallery',
-  components: { GalleryShowpiece }
+  components: { GalleryShowpiece, GalleryImage }
 }
 </script>
 

@@ -1,9 +1,9 @@
 <template>
   <div class='showpiece-item'>
-    <div v-if="project == 'ppsh_41'">
+    <div v-if="project == 'ppsh41'">
       <ppsh-gallery/>
     </div>
-    <div v-else-if="project == 'blue_yeti'">
+    <div v-else-if="project == 'blueyeti'">
       <blueyeti-gallery/>
     </div>
     <div v-else>
