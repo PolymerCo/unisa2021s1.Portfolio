@@ -3,11 +3,15 @@
     <div class='header'>
       Oliver Mitchell
       <span class='sub-header'>3D Artist and Developer</span>
+      <div class='contact-pins'>
+        <a target='_blank' href='https://github.com/PolymerDesign'><img alt='github logo' src='/image/ui/github.svg'></a>
+        <a target='_blank' href='https://www.linkedin.com/in/dev-olivermitchell'><img alt='linked in logo' src='/image/ui/linkedin.png'></a>
+        <a target='_blank' href='mailto:oliver@polymerdesign.com.au'><img alt='email icon' src='/image/ui/email.png'></a>
+      </div>
     </div>
     <nav class='nav'>
       <router-link class='nav-link' to='/' icon='🖼️' display-text='Gallery'><p>Gallery</p></router-link>
       <router-link class='nav-link' to='/about' icon='🧠' display-text='About'><p>About</p></router-link>
-      <router-link class='nav-link' to='/contact' icon='📧' display-text='Contact'><p>Contact</p></router-link>
       <hr>
       <router-link class='nav-link project' to='/gallery/ppsh41' icon='#' display-text='PPSh41'><p>PPSh41</p></router-link>
       <router-link class='nav-link project' to='/gallery/blueyeti' icon='#' display-text='BlueYeti'><p>BlueYeti</p></router-link>
@@ -33,6 +37,17 @@ export default {
 <style lang="sass" scoped>
   @import '../assets/style/theme'
 
+  div.contact-pins
+    display: flex
+
+    a
+      height: 24px
+      margin: 6px
+
+      img
+        width: 100%
+        height: 100%
+
   div.gallery-navigation-root
     padding: 35px 68px
     height: 100%
@@ -50,7 +65,7 @@ export default {
 
     nav.nav
       position: sticky
-      top: 0px
+      top: 0
       padding: 62px 0 18px
       opacity: 0.75
 
@@ -100,7 +115,7 @@ export default {
           position: absolute
           top: -2px
           left: 0
-          width: 0%
+          width: 0
           height: calc(100% + 4px)
           background-color: $body-font-color
           color: $background-color
