@@ -15,13 +15,13 @@
   <section class='gallery-information'>
     <article class='gallery-description'>
       <p>
-        My main inspiration for this artwork was my childhood of games set in the World Wars. This weapon was iconic thoughout
-        both history and video games, being the main weapon during the Soviet spearhead against Germany.
+        Blue™ are known for making fantastic microphones and other audio gear. When thinking of a complex topology to re-create,
+        the Blue™ Yeti™ came to mind.
       </p>
       <p>
-        The weapon made for hard modelling, with many small nooks and details. One particular pain point being the cooling vents
-        on the barrel sheath. The weapon is seperated into two parts, where the magazine is detachable and is fully capable of
-        being an asset by itself.
+        Most of the topology is quite simple for the model, however the stand offered some challenge. It's unusual curves mean that
+        simple extrusion modelling cant be used, and freehand vertex mapipulation must be used instead. This was the primary tool
+        for recreating the topology, and I feel it worked quite well.
       </p>
     </article>
     <article class='gallery-statistics'>
@@ -35,6 +35,11 @@
           <td>8,916</td>
         </tr>
       </table>
+
+      <div class='links'>
+        Download <a class='see-more-link' href='https://github.com/PolymerDesign/unisa2021s1.Models/tree/master/Blue%20Yeti' target='_blank'>here</a>
+        <p>I'm under the <a href='https://choosealicense.com/licenses/mit/' target='_blank'>MIT</a> licence!</p>
+      </div>
     </article>
   </section>
 </template>
@@ -51,19 +56,19 @@ export default {
       top_gallery: [
         {
           id: 'BlueYeti_Blender_Reference',
-          desc: 'UE render of the full weapon'
+          desc: 'Grey shaded render'
         }, {
           id: 'BlueYeti_Blender_White',
-          desc: 'UE render of the magazine'
+          desc: 'Grey shaded front view'
         }, {
-          id: 'BlueYeti_Blender_White_2',
-          desc: 'Full weapon high-poly render'
+          id: 'BlueYeti_Blender_White_Rear',
+          desc: 'Gray shaded rear view'
         }, {
           id: 'BlueYeti_Blender_Wireframe',
-          desc: 'Full weapon low-poly render'
+          desc: 'Wireframe render'
         }, {
           id: 'BlueYeti_Blender_Layout',
-          desc: 'Magazine high-poly render'
+          desc: 'UV layout of microphone'
         }
       ],
 
@@ -80,11 +85,5 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  .showcase-item[item-name='BlueYeti_Blender_Reference']
-    flex-basis: 100%
 
-    transition: 200ms height ease-in
-
-    &[is-loaded='true']:hover
-      flex-basis: 100%
 </style>

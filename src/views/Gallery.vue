@@ -17,7 +17,7 @@ export default {
   @import '@/assets/style/theme'
 
   .gallery-header h1
-    margin: 68px 0 15px
+    margin: 52px 0 15px
     font-family: 'Bitter', sans-serif
     color: $body-font-color
     font-size: 2em

@@ -41,6 +41,12 @@ a
   color: $body-font-color-alt
   text-decoration: none
 
+*
+  color: $body-font-color
+
+body
+  background-color: $background-color
+
 hr
   width: 30%
   border: none
@@ -59,6 +65,8 @@ div.all-content
     display: flex
     flex-direction: column
     padding: 38px
+    max-width: 1000px
+    margin: 0 auto
 
     &.sidebar
       width: 410px
