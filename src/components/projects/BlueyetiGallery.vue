@@ -19,9 +19,9 @@
         the Blue™ Yeti™ came to mind.
       </p>
       <p>
-        Most of the topology is quite simple for the model, however the stand offered some challenge. It's unusual curves mean that
-        simple extrusion modelling cant be used, and freehand vertex mapipulation must be used instead. This was the primary tool
-        for recreating the topology, and I feel it worked quite well.
+        Most of the topology is quite simple for this model, however the metal stand offered some challenges. It's unusual curvature meant that
+        simple extrusion modelling couldn't be used, and I was forced to utilise freehand vertex mapipulation instead. This process was used
+        primerally for the modelling of the stand's curvature, and ensuring a natural feel was difficult to achieve.
       </p>
     </article>
     <article class='gallery-statistics'>
