@@ -6,7 +6,7 @@
     <div class='image-wrapper' v-if='isLoaded'>
       <img class='image' :is-loaded='isLoaded' :src="'/image/projects/' + $route.params.id + '/' + $route.params.image + '.png'">
       <router-link :to='"/gallery/" + $route.params.id'>Back to gallery</router-link>
-      <a style='top: 64px; left: -182px' :href="'/image/projects/' + $route.params.id + '/' + $route.params.image + '.png'" target="_blank">View external</a>
+      <a style='top: 64px; left: -182px' :href="'/image/projects/' + $route.params.id + '/' + $route.params.image + '.png'" target="_blank">Fullscreen</a>
     </div>
   </div>
 </template>

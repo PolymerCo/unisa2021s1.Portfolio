@@ -1,10 +1,13 @@
 <template>
   <div class='showpiece-item'>
-    <div v-if="project == 'ppsh41'">
+    <div v-if="project === 'ppsh41'">
       <ppsh-gallery/>
     </div>
-    <div v-else-if="project == 'blueyeti'">
+    <div v-else-if="project === 'blueyeti'">
       <blueyeti-gallery/>
+    </div>
+    <div v-else-if="project === 'vikingsword'">
+      <viking-sword/>
     </div>
     <div v-else>
       <router-link to='/'>Go home</router-link>
@@ -13,13 +16,14 @@
 </template>
 
 <script>
-import BlueyetiGallery from './projects/BlueyetiGallery.vue'
-import PpshGallery from './projects/PpshGallery.vue'
+import BlueyetiGallery from '@/components/projects/BlueyetiGallery.vue'
+import PpshGallery from '@/components/projects/PpshGallery.vue'
+import VikingSword from '@/components/projects/VikingSword'
 
 export default {
   props: ['project'],
   name: 'GalleryShowpiece',
-  components: { PpshGallery, BlueyetiGallery }
+  components: { VikingSword, PpshGallery, BlueyetiGallery }
 }
 </script>
 

@@ -54,19 +54,19 @@
   </article>
   <hr/>
   <article class='showcase-container'>
-    <router-link to='/gallery/subconsole'>
+    <router-link to='/gallery/vikingsword'>
       <div class='showcase-entry'>
         <div class='showcase-photo-container'>
-          <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png' @load='setImageLoaded($event)'>
+          <img class='image-loader' src='/image/projects/vikingsword/Render_VikingSword_Front_Sideways.png' @load='setImageLoaded($event)'>
 
-          <div class='showcase-photo' v-bind:is-loaded='isImageLoaded("/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png")' style='background-image: url("/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png")'></div>
+          <div class='showcase-photo' v-bind:is-loaded='isImageLoaded("/image/projects/vikingsword/Render_VikingSword_Front_Sideways.png")' style='background-image: url("/image/projects/vikingsword/Render_VikingSword_Front_Sideways.png")'></div>
         </div>
       </div>
     </router-link>
     <div class='showcase-description'>
-      <p class='showcase-title'>Submarine Console</p>
+      <p class='showcase-title'>Viking Sword</p>
       <p class='showcase-article'>
-        Designed for a real time strategy warship game. This asset was designed with a geometric style to suit the game's aesthetic.
+        Inspired by real life Scandanavian sword findings, with some artistic flourish.
       </p>
     </div>
     <router-link class='see-more-link' to='/gallery/subconsole'><p>See more</p></router-link>
