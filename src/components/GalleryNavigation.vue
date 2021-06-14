@@ -15,7 +15,7 @@
       <hr>
       <router-link class='nav-link project' to='/gallery/ppsh41' icon='#' display-text='PPSh41'><p>PPSh41</p></router-link>
       <router-link class='nav-link project' to='/gallery/blueyeti' icon='#' display-text='BlueYeti'><p>BlueYeti</p></router-link>
-      <router-link class='nav-link project' to='/gallery/subconsole' icon='#' display-text='SubmarineConsole'><p>SubmarineConsole</p></router-link>
+      <router-link class='nav-link project' to='/gallery/vikingsword' icon='#' display-text='VikingSword'><p>VikingSword</p></router-link>
       <router-link class='nav-link project' to='/gallery/missile' icon='#' display-text='MissileLauncher'><p>MissileLauncher</p></router-link>
     </nav>
   </div>
@@ -25,12 +25,7 @@
 
 export default {
   name: 'GalleryNavigation',
-  components: { },
-  data () {
-    return {
-
-    }
-  }
+  components: { }
 }
 </script>
 
