@@ -69,7 +69,7 @@
         Inspired by real life Scandanavian sword findings, with some artistic flourish.
       </p>
     </div>
-    <router-link class='see-more-link' to='/gallery/subconsole'><p>See more</p></router-link>
+    <router-link class='see-more-link' to='/gallery/vikingsword'><p>See more</p></router-link>
   </article>
   <hr/>
   <article class='showcase-container'>
