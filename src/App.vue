@@ -37,12 +37,15 @@ export default {
 html
   scroll-behavior: smooth
 
+*
+  color: $body-font-color
+
 a
   color: $body-font-color-alt
   text-decoration: none
 
-*
-  color: $body-font-color
+  p
+    color: $body-font-color-alt
 
 body
   background-color: $background-color
@@ -65,7 +68,7 @@ div.all-content
     display: flex
     flex-direction: column
     padding: 38px
-    max-width: 1000px
+    max-width: 60vw
     margin: 0 auto
 
     &.sidebar

@@ -45,7 +45,6 @@ export default {
       margin: 6px
 
       img
-        width: 100%
         height: 100%
 
   div.gallery-navigation-root
