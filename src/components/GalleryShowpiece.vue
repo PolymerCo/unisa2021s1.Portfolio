@@ -9,6 +9,9 @@
     <div v-else-if="project === 'vikingsword'">
       <viking-sword/>
     </div>
+    <div v-else-if="project === 'missile'">
+      <missile-gallery/>
+    </div>
     <div v-else>
       <router-link to='/'>Go home</router-link>
     </div>
@@ -19,11 +22,12 @@
 import BlueyetiGallery from '@/components/projects/BlueyetiGallery.vue'
 import PpshGallery from '@/components/projects/PpshGallery.vue'
 import VikingSword from '@/components/projects/VikingSword'
+import MissileGallery from '@/components/projects/MissileGallery'
 
 export default {
   props: ['project'],
   name: 'GalleryShowpiece',
-  components: { VikingSword, PpshGallery, BlueyetiGallery }
+  components: { MissileGallery, VikingSword, PpshGallery, BlueyetiGallery }
 }
 </script>
 

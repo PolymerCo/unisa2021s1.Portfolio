@@ -73,22 +73,22 @@
   </article>
   <hr/>
   <article class='showcase-container'>
-    <router-link to='/gallery/ppsh41'>
+    <router-link to='/gallery/missile'>
       <div class='showcase-entry'>
         <div class='showcase-sub-photo-container'>
-          <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Low_Poly_Magazine_Wireframe.png' @load='setImageLoaded($event)'>
-          <div class='showcase-photo sub-photo' v-bind:is-loaded='isImageLoaded("/image/projects/ppsh41/Ppsh41_Unreal_Magazine_1.png")' style='background-image: url("/image/projects/ppsh41/Ppsh41_Unreal_Magazine_1.png")'></div>
+          <img class='image-loader' src='/image/projects/missile/Blender_Missile_Upright_Render.png' @load='setImageLoaded($event)'>
+          <div class='showcase-photo sub-photo' v-bind:is-loaded='isImageLoaded("/image/projects/missile/Blender_Missile_Upright_Render.png")' style='background-image: url("/image/projects/missile/Blender_Missile_Upright_Render.png")'></div>
         </div>
         <div class='showcase-photo-container'>
-          <img class='image-loader' src='/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png' @load='setImageLoaded($event)'>
-          <div class='showcase-photo' v-bind:is-loaded='isImageLoaded("/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png")' style='background-image: url("/image/projects/ppsh41/Ppsh41_Unreal_Full_1.png")'></div>
+          <img class='image-loader' src='/image/projects/missile/Blender_Missile_Upright_Below.png' @load='setImageLoaded($event)'>
+          <div class='showcase-photo' v-bind:is-loaded='isImageLoaded("/image/projects/missile/Blender_Missile_Upright_Below.png")' style='background-image: url("/image/projects/missile/Blender_Missile_Upright_Below.png")'></div>
         </div>
       </div>
     </router-link>
     <div class='showcase-description'>
-      <p class='showcase-title'>V-2 Missile</p>
+      <p class='showcase-title'>V-2 Rocket</p>
       <p class='showcase-article'>
-        Based on the WW2 German V-2 Missile. A low-poly rendition of the terrifying but inspiring technology that begun the space age.
+        Based on the WW2 German V-2 Rocket. A low-poly rendition of the terrifying but inspiring technology that begun the space age.
       </p>
     </div>
     <router-link class='see-more-link' to='/gallery/missile'><p>See more</p></router-link>
