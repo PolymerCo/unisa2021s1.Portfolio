@@ -39,8 +39,8 @@
           <th>Triangles</th>
         </tr>
         <tr>
-          <td>523,955</td>
-          <td>1,040,978</td>
+          <td>1,747</td>
+          <td>3,450</td>
         </tr>
       </table>
 
