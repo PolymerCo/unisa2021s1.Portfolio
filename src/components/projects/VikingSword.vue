@@ -31,9 +31,9 @@
   <section class='gallery-information'>
     <article class='gallery-description'>
       <p>
-        Ancient Scandanavian swords have always been facinating to me, especially since learning more about norse mythology
-        and learning the importantance of war to the Scandanavians. This sword is based from real findings, however has had
-        some artisic embelishments added; such as the use of folded steel for the blade.
+        Ancient Scandanavia has always been facinating to me, especially since learning more about their mythology. Discovering
+        the importantance of war to their people, my interest began growing in their weaponry. This sword is based from real
+        archeological findings, with some artisic embelishments added; such as the use of folded steel for the blade.
       </p>
       <p>
         A unique element of this model is the hammered metal decals within the gard and pommel, this effect was achieved

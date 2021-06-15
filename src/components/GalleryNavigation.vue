@@ -16,7 +16,7 @@
       <router-link class='nav-link project' to='/gallery/ppsh41' icon='#' display-text='PPSh41'><p>PPSh41</p></router-link>
       <router-link class='nav-link project' to='/gallery/blueyeti' icon='#' display-text='BlueYeti'><p>BlueYeti</p></router-link>
       <router-link class='nav-link project' to='/gallery/vikingsword' icon='#' display-text='VikingSword'><p>VikingSword</p></router-link>
-      <router-link class='nav-link project' to='/gallery/missile' icon='#' display-text='MissileLauncher'><p>MissileLauncher</p></router-link>
+      <router-link class='nav-link project' to='/gallery/missile' icon='#' display-text='V2Missile'><p>V2Missile</p></router-link>
     </nav>
   </div>
 </template>

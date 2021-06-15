@@ -86,9 +86,9 @@
       </div>
     </router-link>
     <div class='showcase-description'>
-      <p class='showcase-title'>Missile and Launcher</p>
+      <p class='showcase-title'>V-2 Missile</p>
       <p class='showcase-article'>
-        Again designed with a geometric style, this asset has plenty of small details that add richness to the look and feel.
+        Based on the WW2 German V-2 Missile. A low-poly rendition of the terrifying but inspiring technology that begun the space age.
       </p>
     </div>
     <router-link class='see-more-link' to='/gallery/missile'><p>See more</p></router-link>
