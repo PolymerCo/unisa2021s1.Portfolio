@@ -36,8 +36,8 @@
         archeological findings, with some artisic embelishments added; such as the use of folded steel for the blade.
       </p>
       <p>
-        A unique element of this model is the hammered metal decals within the gard and pommel, this effect was achieved
-        procedurally using an inverted procedural stucci texture mixed with a displacement map. To properly demonstrate
+        A unique element of this model is the hammered metal decals within the guard and pommel, this effect was achieved
+        procedurally using an inverted stucci texture mixed applied to a displacement modifier. To properly demonstrate
         the method, see below for an example render.
       </p>
     </article>
