@@ -1,5 +1,6 @@
 <template>
   <div class='about-banner'></div>
+  <h3 class='title'>3d Artist & Developer, Adelaide, SA, Australia</h3>
   <div class='about-me'>
     <p>
       I'm currently studying a Bachelor of Software Engineering at UniSA. My main focus is software development for business,
@@ -70,6 +71,9 @@ export default {
     background-image: url('/image/about_image.png')
     background-size: cover
     background-position: center
+
+  .title
+    padding: 22px 22px 0
 
   .about-me p, .about-details h3, .about-details h4, .about-details li
     font-family: 'Bitter', sans-serif
